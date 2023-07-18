@@ -1,0 +1,5 @@
+Name: Ag Ali
+Email: ag.ali.01.01.2000@gmail.com
+Password: Agali1@?
+Birthday: Jan 1 2000
+Gender: Male

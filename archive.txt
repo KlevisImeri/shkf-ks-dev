@@ -1,0 +1,170 @@
+//a way to have block in arrays
+            <div v-for="block in info_blocks" :key="block.title" class="block">
+                <div class="title">{{block.title}}</div>
+                <div class="date">{{block.date}}</div>
+                <div class="text" v-html="block.text"></div>
+                <vue-carousel :data="slides2" :interval="3000"></vue-carousel> 
+            </div>
+
+
+//kursi i fizikes
+info_blocks: [{
+                title: 'Kursi i fizikës',
+                date: '21/1/2023',
+                text: `<a href="http://localhost:8080/#/" class="link"> Shoqata kosovare e fizikës</a> 
+                        në bashkëpunim me <a href="https://kms-ks.org/" class="link"> Shoqata e Matematikanëve  të Kosovës </a>
+                        kanë organizuar kursin e fizikës për nxënësit e klasëve të 9, 10, 11 dhe 12 i cili është duke u mbajtur 
+                        në ambientet e Departamentit të fizikës dhe <a href="https://www.facebook.com/newyorkscienceschool?amp%3B__tn__=-]K-R" class="link"> New York School of Science in Kosova</a>.<br>
+                        SHKF falënderon për bashkëpunim:
+                        <ul class="list">
+                            <li>Valmir Krasniqi
+                            <li>Ibrahim Hameli
+                            <li>Albert Januzaj
+                            <li>Yllka Deliu
+                            <li>Astrit Sadiku
+                            <li>Lyra Hoxha
+                            <li>Uran Daku
+                        </ul>`
+            }]
+
+
+
+//mabjatja e garave 2022
+
+<vue-carousel :data="slides4" :interval="3000"></vue-carousel> 
+    <div class="title">Garat e XXIV Shtetërore</div>
+        <div class="date">25/02/2023</div>
+            <div class="text">
+                Garat e XXIV Shtetërore në fizikë 2023 u mbajtën sot në qytetin historik dhe të bukur të Prizrenit.<br><br>
+                Faleminderit të gjithëve që kontribuan në organizimin e kësaj gare: MASHTI-t, DKA-ve komunale, studentëve, prindërve, mësimdhënësve të fizikës e posaçërisht nxënësve pjesëmarrës.<br><br>
+                Faleminderit për mikpritjen Prizren!<br>
+                Suksese nxënësve.
+    </div>
+<vue-carousel :data="slides3" :interval="3000"></vue-carousel> 
+
+            imagearray3: [
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333569472_712248120614712_2312668317548978242_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=X1TgqW-icOMAX99difo&tn=Z24N3FzvLzoEuPrr&_nc_ht=scontent.fbud6-3.fna&oh=00_AfAT5AJMFVuq98aUzrQedZ0nbAtMz-PKt77anqYXLpo9DA&oe=64014F4C',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333692162_190295866942517_4295085936976577108_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=ovXkCptOJEAAX8bxkU1&_nc_ht=scontent.fbud6-4.fna&oh=00_AfBWHBcqAvXGxGVnj6ULE8zWPk_U5l4gNZynIP7pbe1gmQ&oe=6400D013',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333541484_582877000392025_539338916420166059_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=9kAyGoL5prwAX9RO35r&_nc_oc=AQkvwpAeEHCpd7QGv2Pbwo8fNU74KU3iR7KvnKKwTclgPf1nfj1Cb-ium92iDgoXlUg&_nc_ht=scontent.fbud6-3.fna&oh=00_AfBUbbdXj_5xua38CfqFrvTV4n9di8aPZHzdhgNxptLktg&oe=6401FA86',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333563454_8857570640979819_7182541831534909066_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=pSL3g7yYorYAX_KGP5R&_nc_ht=scontent.fbud6-3.fna&oh=00_AfB9Qs8Iklky1iWep8rfYyG3zMgqruD0LGxHV_ySAOdaMg&oe=64024673',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333710519_874939040236111_6241595973557611338_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=wwmIlQPWcGsAX9dN4Fy&_nc_ht=scontent.fbud6-4.fna&oh=00_AfCm4SG7CBpPXpX_s86lFf1vBDVkLGI4sH1fhgqKYXxFew&oe=64018156',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333229684_586747713344823_2072239667199183212_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=Ycja23AslIoAX9q4lKo&tn=Z24N3FzvLzoEuPrr&_nc_ht=scontent.fbud6-3.fna&oh=00_AfBsSfiuI5RCiInYS0YKpq91Awoy95VfnTSh0-VoFkovsA&oe=6401FC84',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333546891_753741913121187_8270563652551039689_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=rZ5Dt-ZRVWkAX85HPls&_nc_ht=scontent.fbud6-4.fna&oh=00_AfAAguNCxgzCSbUjtOMqTTVuGeYQzLmbDSbq6W_xEn5rrQ&oe=6400E424',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333629019_1159940494686519_6592671288849224931_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=0moUe4j5vwUAX-lgmpC&_nc_ht=scontent.fbud6-3.fna&oh=00_AfBVED08hZTYp-TwiCb9smv7x0tCnez9RSbERMqxBAhPAg&oe=6400B630',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333623270_6170608872990245_1335891864963491182_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=ik288PlNV6sAX_zVGXc&_nc_ht=scontent.fbud6-3.fna&oh=00_AfCR-6zaNqVrbLJS6engmXXxkIRTwhIcv1__aXyQXeJ_Hg&oe=6401D32D',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333583582_944839103341386_6127612054064664675_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=MxtLKMu-OLcAX9oHLwS&_nc_ht=scontent.fbud6-3.fna&oh=00_AfBnfUl3pKtrhv4Wn5S0tHDFMu-sZRu3tKg1ie-weGbgOQ&oe=6401F69A',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333682757_682504457006209_7350567784007117079_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=XkBsodl-zSQAX87smMr&_nc_ht=scontent.fbud6-3.fna&oh=00_AfCl4htxQZf6Hml8mW1R_Y13Z4YPTPTc7tpgsTQWgkwGMw&oe=640114C8',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333622660_909907810342539_5323178138178414839_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=aMXsMqun1WYAX86GHdh&_nc_ht=scontent.fbud6-4.fna&oh=00_AfAKo4nsOdlg1x9eEswffoXclw_PiaTIWM5yuZkI38ir4Q&oe=64020276',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333665344_925325348603360_9161048507871343606_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=U5pzXyEAKmsAX-KzJ4L&_nc_ht=scontent.fbud6-3.fna&oh=00_AfAruNZyIvqNIAbsq5rLVTofbxdl0Um1F1LHaEvCnBnxXw&oe=6401A664',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333689666_1170326263670092_8741098245516778802_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=aM2JjulnQ44AX-2VT-N&tn=Z24N3FzvLzoEuPrr&_nc_ht=scontent.fbud6-4.fna&oh=00_AfBLTUcFxlZMn7Yg7dIEcYNBs04lg9sNAJkGl0XSQrVbow&oe=640200FB',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/331216603_511605937719982_3401243405367811182_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=-PUHl9D8ArAAX9_GI-M&_nc_ht=scontent.fbud6-3.fna&oh=00_AfBqGTGJH_oIo8S-wRdKaUDnSivXMDCgIr1LXv6xJA_8IA&oe=6400A060',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333563223_1616220912153136_3503037716980501370_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=nbES6LNYAOsAX_GMupe&_nc_ht=scontent.fbud6-3.fna&oh=00_AfDqywG8GAFUj01kAUCMuGbasvdSyAK_11V9sjilNNdngA&oe=6400956D',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/331328814_735277611473915_7231627136044430552_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=UgRxbJoogIsAX_rRWkv&_nc_ht=scontent.fbud6-3.fna&oh=00_AfD03nFoKdHojivfFF__MCLiAsYZhCyz3FWhVlH7vmDIoA&oe=64016636',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333620921_1174398799915739_3075968729313136287_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=XCcP9vA0V8EAX-RzoND&_nc_ht=scontent.fbud6-3.fna&oh=00_AfBgXmqPJYxrM_ITUvYm2WvZDyK8H1Ai3WY-px07VfWyjw&oe=6400C38A',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333679484_3338252133172135_6308614107957549366_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Bag77Fy8o8cAX-lSNXd&_nc_ht=scontent.fbud6-4.fna&oh=00_AfAQ30ZsuQ_opyl1FO1Wa8ZuOA1AKIfxjurvpOeDfolxuw&oe=64009852',
+                'https://scontent.fbud6-3.fna.fbcdn.net/v/t39.30808-6/333639276_531672815756857_16753876883736883_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=tzGb6RHVlhwAX_cF2Qs&_nc_ht=scontent.fbud6-3.fna&oh=00_AfCD1M-VONAHixN0SeH4UnYaSxLJxffhGCJLU18-9dg18g&oe=6401A88A',
+                'https://scontent.fbud6-4.fna.fbcdn.net/v/t39.30808-6/333374661_1078478920210695_4885012202838825372_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=nwHcOv2-7DwAX8ynSao&_nc_ht=scontent.fbud6-4.fna&oh=00_AfB6jMRdZ2L3zDzwvaCl1ngI_nMJm3Hz0-CXP2fMnmoOeg&oe=64006B0C'
+            ],
+
+
+//Konkusri
+                <div class="title">Konkurs</div>
+                <div class="date">4/2/2023</div>
+                <div class="text">
+                    Ftohen nxënësit (së bashku me mentorët e tyre) të klasëve të 9,10,11 dhe 12 që me eksperimentet origjinale fizike të marrin pjesë në:<br><br>
+                    <div class="center">K O N K U R S <br>për:<br>E K S P E R I M E N T E &nbsp;&nbsp;&nbsp; O R I GJ I N A L E &nbsp;&nbsp;&nbsp;  N Ë  &nbsp;&nbsp;&nbsp; F I Z I K Ë</div>
+                    <div class="neni"><br><br>FITUESIT E PUNËS EKSPERIMENTALE</div>
+                    Fituesit e tri vendeve të para e fitojnë të drejtën që në mënyrë të drejtëpërdrejtë
+                    të marrin pjesë në Olimpiadën kosovare fizikës dhe të jenë kandidat për
+                    pjesëmarrje në Olimpiadat ndërkombtare të fizikës. Në atë rast eksperimentet e
+                    tyre do të vlerësohet deri në 40% të pikëve të përgjithshme.
+                </div>      
+                <div class="text">
+                    Fituesit e tri vendeve të para do të shpërblehen: vendi i parë -200 euro, vendi i
+                    dytë – 150 euro, vendi i tretë -100 euro.
+                </div>  
+                <div class="text">
+                    <div class="neni">PËRMBAJTA E PUNËS EKSPERIMENTALE</div>
+                    Punimi eksperimental duhet të ketë këtë përmbajtje:
+                    <ul class="list">
+                        <li>Titulli i eksperimentit</li>
+                        <li>Qëllimi i eksperimenit</li>
+                        <li>Përshkrimi i aparaturës</li>
+                        <li>Metoda e matjeve</li>
+                        <li>Rezultatet</li>
+                        <li>Përpunimi i rezultateve</li>
+                    </ul>
+                </div> 
+                <div class="text">
+                    <div class="neni">PËRMBAJTA E PUNËS EKSPERIMENTALE</div>
+                    Punimet eksperimentale të paraqitura duhet të plotësojnë këto kushte themelore:
+                    <ol type="a">
+                        <li>Tema e punimit eksperimental mund të jetë e bazuar në programin shkollor por nuk është obligative.</li>
+                        <li>Të jenë eksperimente nga të cilat fitohet një (apo më shumë) rezultate nga matja e madhësive fizike.</li>
+                        <li>Të jenë eksperimente interesante, origjinale ose punime që lidhin fizikën dhe shkencat e tjera (p.sh. ekologjia, mjekësia, etj.).</li>
+                        <li>Nuk do të pranohen punët e zakonshme eksperimentale apo vetëm demonstruese. Puna eksperimentale duhet të jetë origjinale në kuptimin që nuk është paraqitur më parë në mënyrë publike, në mjete të informimit (internet), në ndonjë garë apo manifestim shkencor.</li>
+                        <li>Vendimi përfundimtar për pranimin e punës eksperimentale do të varet edhe
+                            nga mundësia e demonstrimit të eksperimentit, vlerësimi i gabimeve eksperi-
+                            mentale, përpunim i të dhënave eksperimentale, fitingun e lakoreve et.</li>
+                    </ol>
+                </div>  
+                <div class="text">
+                    <div class="neni">PËRZGJEDHJA E PUNIMEVE EKSPERIMENTALE</div>
+                    Përzgjedhja e punimeve eksperimentale bëhet nga Komisioni i garave olimpike si vijon:
+                    <ul class="list">
+                        <li>Nga punimet eksperimentale të paraqitura, Komisioni i garave olimpike do të
+                        zgjedhë punimet eksperimentale të cilat plotësojnë kushtet e mësipërme
+                        themelore dhe sipas nevojës do ti informoj garuesit me udhëzime të mëtejshme
+                        (në faqen e Shoqatës).</li>
+                        <li>Pas dërgimit të versionit përfundimtar, Komisioni shtetëror i garave do të
+                        publikon listën e nxënësve që do të ftohen me punimet e tyre eksperimentale në
+                        Olimpiadën kosovare të fizikës.</li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <div class="neni">VLERËSIMI I PUNËS EKSPERIMENTALE</div>
+                    Vlerësimi i punimeve eksperimentale bëhet nga Komisioni olimpik sipas këtyre kritereve të vlerësimit:
+                    <ul class="list">
+                        <li>vlerësimi i të gjithë punës eksperimentale,</li>
+                        <li>vlerësimi i prezentimit dhe shpjegimit të punës eksperimentale nga vet nxënësi</li>
+                        <li>vlerësimi i mbrojtjes së punës eksperimentale (përgjigje në pyetjet e komisionit).</li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <div class="neni">FINANSIMI I PUNËS EKSPERIMENTALE</div>
+                    Shoqata, për raste të caktuara, mund të finansoj pjesërisht ose tërësisht
+                    blerjen e aparaturës për punën eksperimentale të fituesve të tri vendeve të para.
+                </div>
+                <div class="text">
+                    <div class="neni">AFATI I DËRGIMIT TË PUNËS EKSPERIMENTALE</div>
+                    Përmbajtja e punës së pavarur eksperimentale duhet të dërgohet në e-mailin
+                    e Shoqatës: <a href="shoqatakosovareefizikes@gmail.com" class="link">shoqatakosovareefizikes@gmail.com</a> , deri më: 25.02.2022. Pas
+                    kësaj date nuk do të pranohen.
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="title">Rezultatet e Olimpiadës Kosovare</div>
+                <div class="date">23/3/2023</div>
+                <div class="text">
+                    SHKF shpall:<br><br>
+                    <div class="center">REZULTATET PËRFUNDIMTARE TË OLIMPIADËS KOSOVARE   NË FIZIKË 2023</div><br><br>
+                    Ceremonia e shpërndarjes së certifikatave për fituesit e vendit të, parë, të dytë dhe të tretë të Garave të XXIV shtetërore në fizikë 2023 dhe Olimpiadës kosovare në fizikë 2023 do të mbahet të shtunën më 25.03.2023 nga ora 11.00 në Departamentin e fizikës.<br><br> 
+                    Nga nxënësit të cilët kanë arritur rezultate më të mira do të përzgjedhen dy ekipe të cilat do të marrin pjesë në Olimpiadën ndërkombtare në fizikë 2023 e cila do të mbahen në Japoni dhe Olimpiadën europiane në fizikë 2023 e cila do të mbahet në Gjermani.<br><br>
+                    Suksese edhe në Olimpiadat ndërkombtare!
+                    <img :src="this.imgae_olimpiada_url" class="image">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="title">Rezultatet e garave</div>
+                <div class="date">3/4/2023</div>
+                <div class="text">
+                    <div class="center">REZULTATET PËRFUNDIMTARE TË GARAVE TË XXIV SHTETËRORE NË FIZIKË 2023</div><br><br>
+                    Njoftojmë të interesuarit se të gjithë garuesit e kasëve të 10, 11 dhe 12 të cilët kanë fituar vendin e parë, të dytë ose të tretë mund të marrin pjesë në Olimpiadën kosovare të fizikës 2023.
+                    Në këtë olimpiadë, detyrat do të jenë të njejta për të gjitha klasët (sipas standardeve të olimpiadave ndërkombtare). Nga fituesit e Olimpiadës kosovare të fizikës 2023 do të përzgjidhen dy 
+                    ekipe të cilat do ta përfaqsojnë Kosovën në Olimpiadat ndërkombtare. <br><br>
+                    Suksese nxenesve ne garat e metejshme!
+                </div>
+                <vue-carousel :data="slides4" :interval="3000"></vue-carousel> 
+            </div>
