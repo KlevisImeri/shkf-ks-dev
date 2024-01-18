@@ -75,4 +75,4 @@ package-lock.json
 package.json
 vue.config.js
 
-.dist
+dist/
