@@ -5,7 +5,7 @@ def scrape_data():
     email = 'ag.ali.01.01.2000@gmail.com'
     password = 'Agali1@?'
 
-    num_pages = 10
+    num_pages = 2
 
     data_list = []
 
@@ -24,8 +24,8 @@ def scrape_data():
 def main():
     scraped_data = scrape_data()
     
-    for data in scraped_data:
-        print(data)
+    formatted_data = json.dumps(scraped_data, indent=4)
+    print(formatted_data)
 
 if __name__ == '__main__':
     main()
