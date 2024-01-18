@@ -65,14 +65,7 @@ node_modules/
 # dotenv environment variables file
 .env
 
-
+# mine
 .firebaserc
 .github/
-babel.config.js
-firebase.json
-jsconfig.json
-package-lock.json
-package.json
-vue.config.js
-
-dist/
+dist
