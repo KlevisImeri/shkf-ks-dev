@@ -70,15 +70,12 @@
 </template>
 
 <script>
-import { onMounted } from 'vue';
-
 
 export default {
     methods: {
         generateImageHtmlArray(imagePaths) {
-            const basePath = '@/assets/';
             return imagePaths.map(path => {
-                return `<div class="video" style="background-image: url('${require(basePath + path)}')"></div>`;
+                return `<div class="video" style="background-image: url('${require('@/assets/' + path)}')"></div>`;
             });
         },
     },
@@ -96,7 +93,7 @@ export default {
                             Msc Ibrahim Hameli
 
                             Për çdo paqartësi eventuale na shkruani në emailin: info.shkf24@gmail.com`,
-                    image_urls: [],
+                    image_urls: this.generateImageHtmlArray(['kursi24/1.jpg', 'kursi24/2.jpg', 'kursi24/3.jpg']),
                 },
                 {
                     title: 'Mirënjohje dhe shpërblime për nxënësit e talentuar',
@@ -111,10 +108,15 @@ export default {
 
                             Si Ministri e Arsimit po punojmë me përkushtim që të sigurojmë kushte më të mira në shkolla, me hapësira ku nxënësit mund të shprehin dhe të zhvillojnë talentin e tyre. 
                             I siguroj secilin talent në çdo fushë, se do të jemi krah jush, për të krijuar mundësi të reja që ta shprehni talentin tuaj dhe për të ju dhënë hapësirën që ju duhet.`,
-                    image_urls: [],
+                    image_urls: this.generateImageHtmlArray([
+                        'shperblimet2024/1.jpg', 'shperblimet2024/2.jpg', 'shperblimet2024/3.jpg',
+                        'shperblimet2024/4.jpg', 'shperblimet2024/5.jpg', 'shperblimet2024/6.jpg', 'shperblimet2024/7.jpg'
+                    ]),
                 },
             ],
-            main_photos: [],
+            main_photos: this.generateImageHtmlArray([
+                'main/1.jpg', 'main/2.jpg', 'main/3.jpg', 'main/4.jpg', 'main/5.jpg', 'main/6.jpg', 'main/7.jpg',
+            ]),
             klasa12: [{
                 name: 'Skender Krasniqi',
                 place: '🥇'
@@ -225,17 +227,7 @@ export default {
                 place: '🥉'
             }],
         }
-    },
-    mounted() {
-        this.lajmet_data[0].image_urls = this.generateImageHtmlArray(['kursi24./1.jpg', 'kursi24/2.jpg', 'kursi24/3.jpg']);
-        this.lajmet_data[1].image_urls = this.generateImageHtmlArray([
-            'shperblimet2024/1.jpg', 'shperblimet2024/2.jpg', 'shperblimet2024/3.jpg',
-            'shperblimet2024/4.jpg', 'shperblimet2024/5.jpg', 'shperblimet2024/6.jpg', 'shperblimet2024/7.jpg'
-        ]);
-        this.main_photos = this.generateImageHtmlArray([
-            'main/1.jpg', 'main/2.jpg', 'main/3.jpg', 'main/4.jpg', 'main/5.jpg', 'main/6.jpg', 'main/7.jpg',
-        ]);
-    },
+    }
 }
 </script>
 <style>
