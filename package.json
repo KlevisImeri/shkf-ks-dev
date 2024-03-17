@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^2.0.0",
-    "axios": "^0.27.2",
+    "axios": "^1.6.8",
     "core-js": "^3.8.3",
     "firebase": "^9.15.0",
     "vue": "^3.2.45",
@@ -21,7 +21,7 @@
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "@vue/cli-service": "^5.0.8",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3"
   },
