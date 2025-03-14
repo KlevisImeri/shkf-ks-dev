@@ -68,5 +68,4 @@ node_modules/
 # mine
 .firebaserc
 .github/
-dist
 web
