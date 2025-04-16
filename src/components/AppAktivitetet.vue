@@ -1,62 +1,103 @@
 <template>
     <div class="wrapper_3">
-        <div class="s_menu">
-                <div :class="button.path == current_page ? 's_menu_button active' : 's_menu_button'" v-for="button in menu_buttons" :key="button.text" @click="scrollTo(button.text.replaceAll('','-'))">
-                    <div>{{button.text}}</div>
-                </div>
+      <div class="s_menu">
+        <div 
+          :class="button.path == current_page ? 's_menu_button active' : 's_menu_button'" 
+          v-for="button in menu_buttons" 
+          :key="button.text" 
+          @click="scrollTo(button.text.replaceAll('','-'))"
+        >
+          <div>{{ button.text }}</div>
         </div>
-        <div class="main">
-            <div class="title_s">REVISTA</div>
-            <div class="text flex" @click="linkto('https://drive.google.com/file/d/1wa-Skdi-cM1rtLKvPicVzVp5jZB0rgQ3/view?usp=share_link')">
-                Journal of Physics and Applications
-                <svg class="svgdownload" viewBox="0 0 24 24">
-                    <path d="M4 4C4 3.44772 4.44772 3 5 3H14H14.5858C14.851 3 15.1054 3.10536 15.2929 3.29289L19.7071 7.70711C19.8946 7.89464 20 8.149 20 8.41421V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4Z" stroke="var(--linecolor-color)"/>
-                    <path d="M20 8H15V3" stroke="var(--linecolor-color)"/>
-                    <path d="M12 9L12 17" stroke="var(--linecolor-color)"/>
-                    <path d="M9 14L12 17L15 14" stroke="var(--linecolor-color)"/>
-                </svg>          
-            </div>
+      </div>
+  
+      <div class="main">
+        <div class="title_s">REVISTA</div>
+  
+        <!-- Kuantum 1 -->
+        <img src="@/assets/Kuantum1.jpg" alt="Kuantum 1" class="journal-image" />
+        <div class="text flex download-link" @click="downloadPDF">
+          Kuantum 1
+          <svg class="svgdownload" viewBox="0 0 24 24">
+            <path d="M4 4C4 3.44772 4.44772 3 5 3H14H14.5858C14.851 3 15.1054 3.10536 15.2929 3.29289L19.7071 7.70711C19.8946 7.89464 20 8.149 20 8.41421V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4Z" stroke="var(--linecolor-color)" />
+            <path d="M20 8H15V3" stroke="var(--linecolor-color)" />
+            <path d="M12 9L12 17" stroke="var(--linecolor-color)" />
+            <path d="M9 14L12 17L15 14" stroke="var(--linecolor-color)" />
+          </svg>
         </div>
+
+        <!-- Kuantum 2 -->
+        <img src="@/assets/Kuantum2.jpg" alt="Kuantum 2" class="journal-image" />
+        <div class="text flex download-link" @click="downloadPDF(2)">
+            Kuantum 2
+            <svg class="svgdownload" viewBox="0 0 24 24">
+                <path d="M4 4C4 3.44772 4.44772 3 5 3H14H14.5858C14.851 3 15.1054 3.10536 15.2929 3.29289L19.7071 7.70711C19.8946 7.89464 20 8.149 20 8.41421V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4Z" stroke="var(--linecolor-color)" />
+                <path d="M20 8H15V3" stroke="var(--linecolor-color)" />
+                <path d="M12 9L12 17" stroke="var(--linecolor-color)" />
+                <path d="M9 14L12 17L15 14" stroke="var(--linecolor-color)" />
+            </svg>
+        </div>
+
+        <!-- Kuantum 4 -->
+        <img src="@/assets/Kuantum4.jpg" alt="Kuantum 2" class="journal-image" />
+        <div class="text flex download-link" @click="downloadPDF(4)">
+            Kuantum 4
+            <svg class="svgdownload" viewBox="0 0 24 24">
+                <path d="M4 4C4 3.44772 4.44772 3 5 3H14H14.5858C14.851 3 15.1054 3.10536 15.2929 3.29289L19.7071 7.70711C19.8946 7.89464 20 8.149 20 8.41421V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4Z" stroke="var(--linecolor-color)" />
+                <path d="M20 8H15V3" stroke="var(--linecolor-color)" />
+                <path d="M12 9L12 17" stroke="var(--linecolor-color)" />
+                <path d="M9 14L12 17L15 14" stroke="var(--linecolor-color)" />
+            </svg>
+        </div>
+
+      </div>
     </div>
-</template>
+  </template>
 
 <script>
-// import axios from "axios";
+import Kuantum1PDF from '@/assets/Kuantum1.pdf'
+import Kuantum2PDF from '@/assets/Kuantum2.pdf'
+import Kuantum4PDF from '@/assets/Kuantum4.pdf'
 
 export default {
     data() {
-        return{ 
-            menu_buttons: [{
-                current_page: '',
-                text: 'Revista',
-            }]
-        }
-    },
-    methods: {
-        linkto(link){
-            window.location.href = link;
-        },
-        scrollTo(refName) {
-            var element = this.$refs[refName];
-            console.log(element)
-            var top = element.offsetTop;
-            console.log(top);
-            window.scrollTo(0, top);
-        },
-        path_scroll(i) {
-            const button = this.menu_buttons[i];
-            return button.text;
-        },  
-        // async downloadItem( url, label) {
-        //     const response = await axios.get(url, { responseType: "blob" });
-        //     const blob = new Blob([response.data], { type: "application/pdf" });
-        //     const link = document.createElement("a");
-        //     link.href = URL.createObjectURL(blob);
-        //     link.download = label;
-        //     link.click();
-        //     URL.revokeObjectURL(link.href);
-        // }
+  return {
+    menu_buttons: [{
+      current_page: '',
+      text: 'Revista',
+    }],
+    kuantumPDFs: {
+      1: Kuantum1PDF,
+      2: Kuantum2PDF,
+      4: Kuantum4PDF
     }
+  }
+},
+  methods: {
+    linkto(link) {
+      window.location.href = link;
+    },
+    scrollTo(refName) {
+      const element = this.$refs[refName];
+      const top = element.offsetTop;
+      window.scrollTo(0, top);
+    },
+    path_scroll(i) {
+      const button = this.menu_buttons[i];
+      return button.text;
+    },
+    downloadPDF(volume) {
+    const pdf = this.kuantumPDFs[volume];
+    if (!pdf) return;
+
+    const link = document.createElement('a');
+    link.href = pdf;
+    link.download = `Kuantum${volume}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  }
 }
 </script>
 
@@ -73,6 +114,22 @@ export default {
 .svgdownload:hover{
     stroke: var(--aplikimihover-color);
 }
+
+.download-link {
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.journal-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 2vw auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
 .flex{
     display: flex;
     justify-content: center;
