@@ -38,8 +38,25 @@
             </svg>
         </div>
 
+<<<<<<< HEAD
         <!-- Kuantum 4 -->
         <img src="@/assets/Kuantum4.jpg" alt="Kuantum 2" class="journal-image" />
+=======
+        <!-- Kuantum 3 -->
+        <img src="@/assets/Kuantum3.jpg" alt="Kuantum 3" class="journal-image" />
+        <div class="text flex download-link" @click="downloadPDF(3)">
+            Kuantum 3
+            <svg class="svgdownload" viewBox="0 0 24 24">
+                <path d="M4 4C4 3.44772 4.44772 3 5 3H14H14.5858C14.851 3 15.1054 3.10536 15.2929 3.29289L19.7071 7.70711C19.8946 7.89464 20 8.149 20 8.41421V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4Z" stroke="var(--linecolor-color)" />
+                <path d="M20 8H15V3" stroke="var(--linecolor-color)" />
+                <path d="M12 9L12 17" stroke="var(--linecolor-color)" />
+                <path d="M9 14L12 17L15 14" stroke="var(--linecolor-color)" />
+            </svg>
+        </div>
+
+        <!-- Kuantum 4 -->
+        <img src="@/assets/Kuantum4.jpg" alt="Kuantum 4" class="journal-image" />
+>>>>>>> 680f1c2 (Added more Kuantum journal entries.)
         <div class="text flex download-link" @click="downloadPDF(4)">
             Kuantum 4
             <svg class="svgdownload" viewBox="0 0 24 24">
@@ -57,6 +74,10 @@
 <script>
 import Kuantum1PDF from '@/assets/Kuantum1.pdf'
 import Kuantum2PDF from '@/assets/Kuantum2.pdf'
+<<<<<<< HEAD
+=======
+import Kuantum3PDF from '@/assets/Kuantum3.pdf'
+>>>>>>> 680f1c2 (Added more Kuantum journal entries.)
 import Kuantum4PDF from '@/assets/Kuantum4.pdf'
 
 export default {
@@ -69,6 +90,10 @@ export default {
     kuantumPDFs: {
       1: Kuantum1PDF,
       2: Kuantum2PDF,
+<<<<<<< HEAD
+=======
+      3: Kuantum3PDF,
+>>>>>>> 680f1c2 (Added more Kuantum journal entries.)
       4: Kuantum4PDF
     }
   }
