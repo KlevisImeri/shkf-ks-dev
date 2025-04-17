@@ -38,10 +38,6 @@
             </svg>
         </div>
 
-<<<<<<< HEAD
-        <!-- Kuantum 4 -->
-        <img src="@/assets/Kuantum4.jpg" alt="Kuantum 2" class="journal-image" />
-=======
         <!-- Kuantum 3 -->
         <img src="@/assets/Kuantum3.jpg" alt="Kuantum 3" class="journal-image" />
         <div class="text flex download-link" @click="downloadPDF(3)">
@@ -56,7 +52,6 @@
 
         <!-- Kuantum 4 -->
         <img src="@/assets/Kuantum4.jpg" alt="Kuantum 4" class="journal-image" />
->>>>>>> 680f1c2 (Added more Kuantum journal entries.)
         <div class="text flex download-link" @click="downloadPDF(4)">
             Kuantum 4
             <svg class="svgdownload" viewBox="0 0 24 24">
@@ -74,10 +69,7 @@
 <script>
 import Kuantum1PDF from '@/assets/Kuantum1.pdf'
 import Kuantum2PDF from '@/assets/Kuantum2.pdf'
-<<<<<<< HEAD
-=======
 import Kuantum3PDF from '@/assets/Kuantum3.pdf'
->>>>>>> 680f1c2 (Added more Kuantum journal entries.)
 import Kuantum4PDF from '@/assets/Kuantum4.pdf'
 
 export default {
@@ -90,10 +82,7 @@ export default {
     kuantumPDFs: {
       1: Kuantum1PDF,
       2: Kuantum2PDF,
-<<<<<<< HEAD
-=======
       3: Kuantum3PDF,
->>>>>>> 680f1c2 (Added more Kuantum journal entries.)
       4: Kuantum4PDF
     }
   }
