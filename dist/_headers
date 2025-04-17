@@ -1,0 +1,6 @@
+/index.html
+  Cache-Control: no-cache, max-age=0
+/js/*
+  Cache-Control: no-cache, max-age=0
+/css/*
+  Cache-Control: no-cache, max-age=0
