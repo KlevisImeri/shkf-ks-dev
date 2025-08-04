@@ -83,6 +83,7 @@ import Kuantum1PDF from '@/assets/Kuantum1.pdf'
 import Kuantum2PDF from '@/assets/Kuantum2.pdf'
 import Kuantum3PDF from '@/assets/Kuantum3.pdf'
 import Kuantum4PDF from '@/assets/Kuantum4.pdf'
+import Kuantum5PDF from '@/assets/Kuantum5.pdf'
 
 export default {
     data() {
@@ -95,7 +96,8 @@ export default {
       1: Kuantum1PDF,
       2: Kuantum2PDF,
       3: Kuantum3PDF,
-      4: Kuantum4PDF
+      4: Kuantum4PDF,
+      5: Kuantum5PDF
     }
   }
 },
