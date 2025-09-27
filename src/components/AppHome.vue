@@ -1,5 +1,6 @@
 <template>
   <vue-carousel :data="main_photos" :interval="3000"></vue-carousel>
+  <div v-html="text"></div>
   <div class="wrapper_2">
     <div>
       <div class="title_s margin_top">Lajmet e fundit</div>
@@ -7,7 +8,7 @@
       <div class="block" v-for="block in lajmet_data" :key="block.title">
         <div class="title">{{ block.title }}</div>
         <div class="date">{{ block.date }}</div>
-        <div class="text" style="white-space: pre-line">{{ block.text }}</div>
+  <div class="text" v-html="block.text"></div>
         <vue-carousel :data="block.image_urls" :interval="3000"></vue-carousel>
       </div>
 
@@ -106,6 +107,32 @@ export default {
   data() {
     return {
       lajmet_data: [
+        {
+          title: 'Orari i garave shkollore, komunale, shtetërore dhe Olimpiadës Shtetërore në Fizikë 2026',
+          date: '27 Shtator 2025',
+          text: `
+<p>Nga ky vit në garat shkollore, komunale, shtetërore në fizikë do të marrin pjesë
+për herë të parë edhe nxënësit e klasëve të 7-ta dhe të 8-ta.</p>
+
+<ul>
+  <li><b>Garat Shkollore në Fizikë 2026</b><br>Gjatë dhjetorit 2025, në shkollat përkatëse.</li><br>
+
+  <li><b>Garat Komunale në Fizikë 2026</b><br>17. 01. 2026 në ora 11.00 në vendin të cilin e cakton DKA e komunës.</li><br>
+
+  <li><b>Garat në punën eksperimentale në fizikë 2026</b><br>24. 01. 2026 në ora 11.00 në Departamentin e Fizikës të FSHMN, Prishtinë.</li><br>
+
+  <li><b>Garat Shtetërore në Fizikë 2026</b><br>31. 01. 2026 në ora 11.00 (vendi i mbajtjes caktohet më vonë).</li><br>
+
+  <li><b>Olimpiada Kosovare e Fizikës 2026</b><br>14. 02. 2026 në ora 11.00 në Departamentin e Fizikës të FSHMN, Prishtinë.</li>
+</ul>
+<div style="font-size: 0.65vw; font-style: italic; color: #555; margin-top: 0.5em;">
+Shënim: Garat shkollore, komunale, shtetërore për klasët e 7, 8, 9, 10, 11, 12 dhe Olimpiada Kosovare në Fizikë do të mbahen sipas orarit të dhënë. Nëse eventualisht ka ndryshim të datave, Shoqata Kosovare e Fizikës do të jap me kohë informatat e nevojshme.<br><br>
+
+Në të gjitha nivelet e garave, nxënësit mund të përdorin mjetet e tyre të shkrimit dhe vizatimit, një kalkulator xhepi të pa programueshëm, një mjet gjeometrik (vizore apo trekëndësh) dhe materiale tjera të cilat i vë në dispozicion organizatori i garave. Gjatë garave, nxënësi nuk duhet të ketë asnjë material të shkruar (libra, fletore, dhe mjete të ngjashme), telefona celularë ose pajisje tjera elektronike.
+</div>
+
+`.trim(),
+        },
         {
           title: 'Kursi Themelor në fizikë 2024',
           date: 'Janar 13',
