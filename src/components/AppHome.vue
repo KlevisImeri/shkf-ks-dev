@@ -107,31 +107,62 @@ export default {
   data() {
     return {
       lajmet_data: [
+        
         {
-          title: 'Orari i garave shkollore, komunale, shtetërore dhe Olimpiadës Shtetërore në Fizikë 2026',
-          date: '27 Shtator 2025',
-          text: `
-<p>Nga ky vit në garat shkollore, komunale, shtetërore në fizikë do të marrin pjesë
-për herë të parë edhe nxënësit e klasëve të 7-ta dhe të 8-ta.</p>
+              title: 'Konkurs për fotografinë më të mirë të fizikës',
+              date: '27 Tetor 2025',
+              text: `
+    <p><img src="${require('@/assets/konkursi/Konkurs për fotografin.jpg')}" alt="Konkurs" class="image" /></p>
 
-<ul>
-  <li><b>Garat Shkollore në Fizikë 2026</b><br>Gjatë dhjetorit 2025, në shkollat përkatëse.</li><br>
+    <p><strong>SI të aplikoni?</strong></p>
 
-  <li><b>Garat Komunale në Fizikë 2026</b><br>17. 01. 2026 në ora 11.00 në vendin të cilin e cakton DKA e komunës.</li><br>
+    <ul>
+      <li>Emri dhe mbiemri i autorit, adresa, e-mail adresa dhe numri i telefonit. (Për nxënës mund të dërgohen edhe të dhënat e mentorit nëse fotografia është punuar në përkujdesin e tij).</li>
+      <li>Emri dhe adresa e institucionit (shkollës etj.).</li>
+      <li>Titulli i fotografisë.</li>
+      <li>Përshkrimi i fotografisë, nga 50 deri në 250 fjalë.</li>
+    </ul>
 
-  <li><b>Garat në punën eksperimentale në fizikë 2026</b><br>24. 01. 2026 në ora 11.00 në Departamentin e Fizikës të FSHMN, Prishtinë.</li><br>
+    <p>Duke aplikuar në konkurs, autorët (dhe mentorët) garantojnë që fotografitë janë origjinale të tyre dhe ia transferojnë SHKF-së të drejtën e autorit për publikimin e fotografisë, e cila do të publikohet në mjetet publike të SHKF (faqen e SHKF në Facebook, webfaqen e SHKF, revistën "Kuantum" etj), së bashku me informacionet rreth autorit (mentorit), si dhe përshkrimin përkatës.</p>
 
-  <li><b>Garat Shtetërore në Fizikë 2026</b><br>31. 01. 2026 në ora 11.00 (vendi i mbajtjes caktohet më vonë).</li><br>
+    <p><strong>KU ti dërgoni fotografitë?</strong></p>
+    <p>Fotografinë së bashku me përshkrimin përkatës dhe me të dhënat e autorit (mentorit) dërgoni në emailin:</p> <a href="mailto:shoqatakosovareefizikes@gmail.com">shoqatakosovareefizikes@gmail.com</a>
 
-  <li><b>Olimpiada Kosovare e Fizikës 2026</b><br>14. 02. 2026 në ora 11.00 në Departamentin e Fizikës të FSHMN, Prishtinë.</li>
-</ul>
-<div style="font-size: 0.65vw; font-style: italic; color: #555; margin-top: 0.5em;">
-Shënim: Garat shkollore, komunale, shtetërore për klasët e 7, 8, 9, 10, 11, 12 dhe Olimpiada Kosovare në Fizikë do të mbahen sipas orarit të dhënë. Nëse eventualisht ka ndryshim të datave, Shoqata Kosovare e Fizikës do të jap me kohë informatat e nevojshme.<br><br>
+    <p><strong>KUR fillon aplikimi?</strong></p>
+    <p>Konkursi është i hapur nga 20 tetor 2025 deri më 31 gushti 2026. SHKF do të shpall fituesit në shtator 2026 dhe fotografitë më të mira do të shpërblehen.</p>
 
-Në të gjitha nivelet e garave, nxënësit mund të përdorin mjetet e tyre të shkrimit dhe vizatimit, një kalkulator xhepi të pa programueshëm, një mjet gjeometrik (vizore apo trekëndësh) dhe materiale tjera të cilat i vë në dispozicion organizatori i garave. Gjatë garave, nxënësi nuk duhet të ketë asnjë material të shkruar (libra, fletore, dhe mjete të ngjashme), telefona celularë ose pajisje tjera elektronike.
-</div>
+    <p><strong>PËR kurreshtarët</strong></p>
+    <p>Shikoni fotografitë në një konkurs prestigjioz.</p>
+    <p><a href="https://apps.aapt.org/PhotoContest2024/galleryAll.cfm" target="_blank" class="link">https://apps.aapt.org/PhotoContest2024/galleryAll.cfm</a></p>
 
+    <p><strong>Suksese!</strong></p>
 `.trim(),
+        },
+        {
+              title: 'Orari i garave shkollore, komunale, shtetërore dhe Olimpiadës Shtetërore në Fizikë 2026',
+              date: '27 Shtator 2025',
+              text: `
+    <p>Nga ky vit në garat shkollore, komunale, shtetërore në fizikë do të marrin pjesë
+    për herë të parë edhe nxënësit e klasëve të 7-ta dhe të 8-ta.</p>
+
+    <ul>
+      <li><b>Garat Shkollore në Fizikë 2026</b><br>Gjatë dhjetorit 2025, në shkollat përkatëse.</li><br>
+
+      <li><b>Garat Komunale në Fizikë 2026</b><br>17. 01. 2026 në ora 11.00 në vendin të cilin e cakton DKA e komunës.</li><br>
+
+      <li><b>Garat në punën eksperimentale në fizikë 2026</b><br>24. 01. 2026 në ora 11.00 në Departamentin e Fizikës të FSHMN, Prishtinë.</li><br>
+
+      <li><b>Garat Shtetërore në Fizikë 2026</b><br>31. 01. 2026 në ora 11.00 (vendi i mbajtjes caktohet më vonë).</li><br>
+
+      <li><b>Olimpiada Kosovare e Fizikës 2026</b><br>14. 02. 2026 në ora 11.00 në Departamentin e Fizikës të FSHMN, Prishtinë.</li>
+    </ul>
+    <div style="font-size: 0.65vw; font-style: italic; color: #555; margin-top: 0.5em;">
+    Shënim: Garat shkollore, komunale, shtetërore për klasët e 7, 8, 9, 10, 11, 12 dhe Olimpiada Kosovare në Fizikë do të mbahen sipas orarit të dhënë. Nëse eventualisht ka ndryshim të datave, Shoqata Kosovare e Fizikës do të jap me kohë informatat e nevojshme.<br><br>
+
+    Në të gjitha nivelet e garave, nxënësit mund të përdorin mjetet e tyre të shkrimit dhe vizatimit, një kalkulator xhepi të pa programueshëm, një mjet gjeometrik (vizore apo trekëndësh) dhe materiale tjera të cilat i vë në dispozicion organizatori i garave. Gjatë garave, nxënësi nuk duhet të ketë asnjë material të shkruar (libra, fletore, dhe mjete të ngjashme), telefona celularë ose pajisje tjera elektronike.
+    </div>
+
+    `.trim(),
         },
         {
           title: 'Kursi Themelor në fizikë 2024',
@@ -168,6 +199,7 @@ Në të gjitha nivelet e garave, nxënësit mund të përdorin mjetet e tyre të
       main_photos: this.generateImageHtmlArray([
         'main/1.jpg', 'main/2.jpg', 'main/3.jpg', 'main/4.jpg', 'main/5.jpg', 'main/6.jpg', 'main/7.jpg',
       ]),
+  // (removed standalone konkursImage) image is embedded inside lajmet_data[0].text
       klasa12: [{
         name: 'Skender Krasniqi',
         place: '🥇'
