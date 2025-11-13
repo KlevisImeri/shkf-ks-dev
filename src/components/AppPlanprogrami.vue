@@ -11,7 +11,7 @@
     <div class="text">
         <div class="subsub_title center">Grupi I</div>
         Përmbajtja (temat) e klasës së mëparshme si dhe përmbajtja (temat) e bazuar në
-        programet mësimore të klasës së 9:
+        programet mësimore të klasës së 7:
         <ol class="blue">
             <li style="text-decoration: underline;">Matjet themelore</li>
             <li style="text-decoration: underline;">Lëvizjet e thjeshta</li>
